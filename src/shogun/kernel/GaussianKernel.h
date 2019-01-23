@@ -1,8 +1,8 @@
 /*
  * This software is distributed under BSD 3-clause license (see LICENSE file).
  *
- * Authors: Jacob Walker, Soeren Sonnenburg, Chiyuan Zhang, Wu Lin, 
- *          Sergey Lisitsyn, Roman Votyakov, Heiko Strathmann, Yuyu Zhang, 
+ * Authors: Jacob Walker, Soeren Sonnenburg, Chiyuan Zhang, Wu Lin,
+ *          Sergey Lisitsyn, Roman Votyakov, Heiko Strathmann, Yuyu Zhang,
  *          Tonmoy Saikia, Soumyajit De, Sanuj Sharma
  */
 
@@ -146,7 +146,7 @@ protected:
 	 *
 	 *  @exception ShogunException Will be thrown if an error occurres.
 	 */
-	virtual void load_serializable_post() throw (ShogunException);
+	virtual void load_serializable_post() noexcept(false);
 
 	/** compute the distance between features a and b
 	 * idx_{a,b} denote the index of the feature vectors
